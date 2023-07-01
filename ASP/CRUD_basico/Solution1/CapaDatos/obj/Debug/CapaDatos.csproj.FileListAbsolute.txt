@@ -1,0 +1,7 @@
+D:\capacitacion\asp\CRUD_basico\Solution1\CapaDatos\bin\Debug\CapaDatos.dll
+D:\capacitacion\asp\CRUD_basico\Solution1\CapaDatos\bin\Debug\CapaDatos.pdb
+D:\capacitacion\asp\CRUD_basico\Solution1\CapaDatos\bin\Debug\CapaEntidad.dll
+D:\capacitacion\asp\CRUD_basico\Solution1\CapaDatos\bin\Debug\CapaEntidad.pdb
+D:\capacitacion\asp\CRUD_basico\Solution1\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+D:\capacitacion\asp\CRUD_basico\Solution1\CapaDatos\obj\Debug\CapaDatos.dll
+D:\capacitacion\asp\CRUD_basico\Solution1\CapaDatos\obj\Debug\CapaDatos.pdb

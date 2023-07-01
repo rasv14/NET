@@ -1,0 +1,5 @@
+D:\capacitacion\asp\CRUD_basico\Solution1\CapaEntidad\bin\Debug\CapaEntidad.dll
+D:\capacitacion\asp\CRUD_basico\Solution1\CapaEntidad\bin\Debug\CapaEntidad.pdb
+D:\capacitacion\asp\CRUD_basico\Solution1\CapaEntidad\obj\Debug\CapaEntidad.csprojResolveAssemblyReference.cache
+D:\capacitacion\asp\CRUD_basico\Solution1\CapaEntidad\obj\Debug\CapaEntidad.dll
+D:\capacitacion\asp\CRUD_basico\Solution1\CapaEntidad\obj\Debug\CapaEntidad.pdb

@@ -1,0 +1,11 @@
+D:\capacitacion\asp\CRUD_basico\Solution1\CapaPresentacion\bin\CapaPresentacion.dll
+D:\capacitacion\asp\CRUD_basico\Solution1\CapaPresentacion\bin\CapaPresentacion.pdb
+D:\capacitacion\asp\CRUD_basico\Solution1\CapaPresentacion\bin\CapaEntidad.dll
+D:\capacitacion\asp\CRUD_basico\Solution1\CapaPresentacion\bin\CapaNegocio.dll
+D:\capacitacion\asp\CRUD_basico\Solution1\CapaPresentacion\bin\CapaDatos.dll
+D:\capacitacion\asp\CRUD_basico\Solution1\CapaPresentacion\bin\CapaEntidad.pdb
+D:\capacitacion\asp\CRUD_basico\Solution1\CapaPresentacion\bin\CapaNegocio.pdb
+D:\capacitacion\asp\CRUD_basico\Solution1\CapaPresentacion\bin\CapaDatos.pdb
+D:\capacitacion\asp\CRUD_basico\Solution1\CapaPresentacion\obj\Debug\CapaPresentacion.csprojResolveAssemblyReference.cache
+D:\capacitacion\asp\CRUD_basico\Solution1\CapaPresentacion\obj\Debug\CapaPresentacion.dll
+D:\capacitacion\asp\CRUD_basico\Solution1\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
