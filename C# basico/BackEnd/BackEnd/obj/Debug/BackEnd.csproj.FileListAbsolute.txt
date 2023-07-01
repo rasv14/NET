@@ -1,0 +1,5 @@
+D:\capacitacion\Platzi\c#_ basico\BackEnd\BackEnd\bin\BackEnd.dll
+D:\capacitacion\Platzi\c#_ basico\BackEnd\BackEnd\bin\BackEnd.pdb
+D:\capacitacion\Platzi\c#_ basico\BackEnd\BackEnd\obj\Debug\BackEnd.csprojResolveAssemblyReference.cache
+D:\capacitacion\Platzi\c#_ basico\BackEnd\BackEnd\obj\Debug\BackEnd.dll
+D:\capacitacion\Platzi\c#_ basico\BackEnd\BackEnd\obj\Debug\BackEnd.pdb

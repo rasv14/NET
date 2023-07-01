@@ -1,0 +1,14 @@
+C:\Temp\Intitucion\Intitucion\bin\Debug\Intitucion.exe.config
+C:\Temp\Intitucion\Intitucion\bin\Debug\Intitucion.exe
+C:\Temp\Intitucion\Intitucion\bin\Debug\Intitucion.pdb
+C:\Temp\Intitucion\Intitucion\obj\Debug\Intitucion.exe
+C:\Temp\Intitucion\Intitucion\obj\Debug\Intitucion.pdb
+C:\Temp\Intitucion\Intitucion\bin\Debug\Files\Profesores.txt
+C:\Temp\Intitucion\Intitucion\bin\Debug\EntityFramework.dll
+C:\Temp\Intitucion\Intitucion\bin\Debug\EntityFramework.SqlServer.dll
+C:\Temp\Intitucion\Intitucion\bin\Debug\EntityFramework.xml
+C:\Temp\Intitucion\Intitucion\bin\Debug\EntityFramework.SqlServer.xml
+D:\capacitacion\Platzi\c#_ basico\c-sharp-master\Intitucion\bin\Debug\Intitucion.exe.config
+D:\capacitacion\Platzi\c#_ basico\c-sharp-master\Intitucion\obj\Debug\Intitucion.exe
+D:\capacitacion\Platzi\c#_ basico\c-sharp-master\Intitucion\obj\Debug\Intitucion.pdb
+D:\capacitacion\Platzi\c#_ basico\c-sharp-master\Intitucion\obj\Debug\Intitucion.csprojResolveAssemblyReference.cache
