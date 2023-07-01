@@ -1,0 +1,95 @@
+﻿
+body
+{
+
+    background: url(imagenes/fondo.png) no-repeat center center fixed; 
+
+  background-size: cover;
+    
+}
+
+header
+{
+    text-align:left;
+    margin-bottom:50px;
+}
+
+    header img
+    {
+        width:10%;
+    }
+
+h1
+{
+    font-family: 'Times New Roman';
+    text-decoration: underline;
+    color: #000099;
+    text-align:center;
+}
+
+#formulario
+{
+    background: #99CCFF;
+    margin: 0px auto;
+    width: 40%;
+    padding: 30px;
+    border-radius: 10px;
+    border-style: none;
+    box-shadow: 0 0 5px #000000;
+    
+    text-align:center;
+}
+
+    #formulario input[type=text]
+    {
+        width:95%;
+        border-radius:10px;
+        padding:5px;
+        margin:5px;
+    }
+        #formulario input[type=text]:focus
+        {
+            background:aqua;
+        }
+form fieldset
+{
+    
+  border-color:aqua;
+  border-radius:5px;
+}
+form legend
+{
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    text-align: center;
+    color: #CC9900;
+    display: none;
+}
+#formulario input[type=submit]
+{
+    background:blue;
+    color:white;
+    text-align:center;
+    padding:10px 20px 10px 20px;
+    font-size:15px;
+    margin:0px auto;
+    border-radius:5px;
+    background-color:blue;
+    
+}
+    #formulario input[type=submit]:hover
+    {
+    transform:scale(1.1,1.1);
+        /*opacity:0.3;*/
+    }
+
+footer
+{
+    margin-top:50px;
+    text-align:center;
+    
+}
+    footer img
+    {
+        width:10%;
+    }
