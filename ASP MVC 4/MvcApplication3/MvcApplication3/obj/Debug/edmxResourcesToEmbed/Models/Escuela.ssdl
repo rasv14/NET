@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="bdescuelaModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="bdescuelaModelStoreContainer">
+    <EntitySet Name="cargo" EntityType="bdescuelaModel.Store.cargo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="usuario" EntityType="bdescuelaModel.Store.usuario" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK__usuario__car_cod__1273C1CD" Association="bdescuelaModel.Store.FK__usuario__car_cod__1273C1CD">
+      <End Role="cargo" EntitySet="cargo" />
+      <End Role="usuario" EntitySet="usuario" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="cargo">
+    <Key>
+      <PropertyRef Name="car_cod" />
+    </Key>
+    <Property Name="car_cod" Type="int" Nullable="false" />
+    <Property Name="car_des" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="usuario">
+    <Key>
+      <PropertyRef Name="usu_cod" />
+    </Key>
+    <Property Name="usu_cod" Type="int" Nullable="false" />
+    <Property Name="usu_nom" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="car_cod" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__usuario__car_cod__1273C1CD">
+    <End Role="cargo" Type="bdescuelaModel.Store.cargo" Multiplicity="1" />
+    <End Role="usuario" Type="bdescuelaModel.Store.usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="cargo">
+        <PropertyRef Name="car_cod" />
+      </Principal>
+      <Dependent Role="usuario">
+        <PropertyRef Name="car_cod" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

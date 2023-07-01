@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="bdescuelaModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="bdescuelaEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="cargo" EntityType="bdescuelaModel.cargo" />
+    <EntitySet Name="usuario" EntityType="bdescuelaModel.usuario" />
+    <AssociationSet Name="FK__usuario__car_cod__1273C1CD" Association="bdescuelaModel.FK__usuario__car_cod__1273C1CD">
+      <End Role="cargo" EntitySet="cargo" />
+      <End Role="usuario" EntitySet="usuario" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="cargo">
+    <Key>
+      <PropertyRef Name="car_cod" />
+    </Key>
+    <Property Name="car_cod" Type="Int32" Nullable="false" />
+    <Property Name="car_des" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="usuario" Relationship="bdescuelaModel.FK__usuario__car_cod__1273C1CD" FromRole="cargo" ToRole="usuario" />
+  </EntityType>
+  <EntityType Name="usuario">
+    <Key>
+      <PropertyRef Name="usu_cod" />
+    </Key>
+    <Property Name="usu_cod" Type="Int32" Nullable="false" />
+    <Property Name="usu_nom" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="car_cod" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="cargo" Relationship="bdescuelaModel.FK__usuario__car_cod__1273C1CD" FromRole="usuario" ToRole="cargo" />
+  </EntityType>
+  <Association Name="FK__usuario__car_cod__1273C1CD">
+    <End Role="cargo" Type="bdescuelaModel.cargo" Multiplicity="1" />
+    <End Role="usuario" Type="bdescuelaModel.usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="cargo">
+        <PropertyRef Name="car_cod" />
+      </Principal>
+      <Dependent Role="usuario">
+        <PropertyRef Name="car_cod" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

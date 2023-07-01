@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="bdescuelaModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="bdescuelaModelStoreContainer">
+          <EntitySet Name="cargo" EntityType="bdescuelaModel.Store.cargo" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="usuario" EntityType="bdescuelaModel.Store.usuario" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK__usuario__car_cod__1273C1CD" Association="bdescuelaModel.Store.FK__usuario__car_cod__1273C1CD">
+            <End Role="cargo" EntitySet="cargo" />
+            <End Role="usuario" EntitySet="usuario" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="cargo">
+          <Key>
+            <PropertyRef Name="car_cod" />
+          </Key>
+          <Property Name="car_cod" Type="int" Nullable="false" />
+          <Property Name="car_des" Type="varchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="usuario">
+          <Key>
+            <PropertyRef Name="usu_cod" />
+          </Key>
+          <Property Name="usu_cod" Type="int" Nullable="false" />
+          <Property Name="usu_nom" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="car_cod" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__usuario__car_cod__1273C1CD">
+          <End Role="cargo" Type="bdescuelaModel.Store.cargo" Multiplicity="1" />
+          <End Role="usuario" Type="bdescuelaModel.Store.usuario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="cargo">
+              <PropertyRef Name="car_cod" />
+            </Principal>
+            <Dependent Role="usuario">
+              <PropertyRef Name="car_cod" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="bdescuelaModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="bdescuelaEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="cargo" EntityType="bdescuelaModel.cargo" />
+          <EntitySet Name="usuario" EntityType="bdescuelaModel.usuario" />
+          <AssociationSet Name="FK__usuario__car_cod__1273C1CD" Association="bdescuelaModel.FK__usuario__car_cod__1273C1CD">
+            <End Role="cargo" EntitySet="cargo" />
+            <End Role="usuario" EntitySet="usuario" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="cargo">
+          <Key>
+            <PropertyRef Name="car_cod" />
+          </Key>
+          <Property Name="car_cod" Type="Int32" Nullable="false" />
+          <Property Name="car_des" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="usuario" Relationship="bdescuelaModel.FK__usuario__car_cod__1273C1CD" FromRole="cargo" ToRole="usuario" />
+        </EntityType>
+        <EntityType Name="usuario">
+          <Key>
+            <PropertyRef Name="usu_cod" />
+          </Key>
+          <Property Name="usu_cod" Type="Int32" Nullable="false" />
+          <Property Name="usu_nom" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="car_cod" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="cargo" Relationship="bdescuelaModel.FK__usuario__car_cod__1273C1CD" FromRole="usuario" ToRole="cargo" />
+        </EntityType>
+        <Association Name="FK__usuario__car_cod__1273C1CD">
+          <End Role="cargo" Type="bdescuelaModel.cargo" Multiplicity="1" />
+          <End Role="usuario" Type="bdescuelaModel.usuario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="cargo">
+              <PropertyRef Name="car_cod" />
+            </Principal>
+            <Dependent Role="usuario">
+              <PropertyRef Name="car_cod" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="bdescuelaModelStoreContainer" CdmEntityContainer="bdescuelaEntities">
+          <EntitySetMapping Name="cargo">
+            <EntityTypeMapping TypeName="bdescuelaModel.cargo">
+              <MappingFragment StoreEntitySet="cargo">
+                <ScalarProperty Name="car_cod" ColumnName="car_cod" />
+                <ScalarProperty Name="car_des" ColumnName="car_des" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="usuario">
+            <EntityTypeMapping TypeName="bdescuelaModel.usuario">
+              <MappingFragment StoreEntitySet="usuario">
+                <ScalarProperty Name="usu_cod" ColumnName="usu_cod" />
+                <ScalarProperty Name="usu_nom" ColumnName="usu_nom" />
+                <ScalarProperty Name="car_cod" ColumnName="car_cod" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
