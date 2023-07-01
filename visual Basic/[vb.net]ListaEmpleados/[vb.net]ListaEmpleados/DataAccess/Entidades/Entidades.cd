@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DataAccess.Entidades.EstadoCivilEntity">
+    <Position X="3.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAACAAAAAAAAAAAAAAAAAABAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Entidades\EstadoCivilEntity.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccess.Entidades.EstudioEntity">
+    <Position X="3.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAgAEAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entidades\EstudioEntity.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccess.Entidades.EmpleadoEntity">
+    <Position X="1.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ECAAAAACAAAggAAEAAQAgABAAAAAABAAAICBAAQAAIA=</HashCode>
+      <FileName>Entidades\EmpleadoEntity.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Estudios" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>
