@@ -1,0 +1,51 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<button @onclick="Refresh">Refrescar</button>
+
+@if (result != null)
+{
+    @foreach (clientSwagger.WeatherForecast weather in result)
+    {
+       
+        
+        <div>
+            <p>@weather.Summary </p>
+            <p>@weather.Date</p>    
+
+
+        </div>
+
+
+    
+    }
+
+
+}
+
+
+
+@code {
+
+    private ICollection<clientSwagger.WeatherForecast> result;
+    private clientSwagger.clientSwagger client = new clientSwagger.clientSwagger("https://localhost:7005/", new HttpClient());
+    private async Task Refresh()
+    {
+
+        result = await client.GetWeatherForecastAsync();
+
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await Refresh();
+
+    }
+
+
+}
